@@ -12,3 +12,4 @@ fft_len = 16384;      % Why 16384?  -> see Chapter 3
 
 % Process: Par
 [Jan_Par_PowX_dB, Jan_Par_PowX] = calc_powerspec(Jan_Par(:, 1:2), fft_len);
+
