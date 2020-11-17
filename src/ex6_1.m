@@ -60,3 +60,4 @@ subplot(3, 2, 6);
 %   3 4
 %   5 6
 
+saveas(gcf,'../out/6-1.png');
