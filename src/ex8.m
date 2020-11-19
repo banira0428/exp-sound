@@ -33,10 +33,10 @@ for i = 1:10
         Jan_Goo_PowX_dB = [Jan_Goo_PowX_dB PowX_dB(:,1)];
     end
     if idx == 2
-        Jan_Goo_PowX_dB = [Jan_Chk_PowX_dB PowX_dB(:,1)];
+        Jan_Chk_PowX_dB = [Jan_Chk_PowX_dB PowX_dB(:,1)];
     end
     if idx == 3
-        Jan_Goo_PowX_dB = [Jan_Par_PowX_dB PowX_dB(:,1)];
+        Jan_Par_PowX_dB = [Jan_Par_PowX_dB PowX_dB(:,1)];
     end
 
     %% 6. Display the result stiring!
