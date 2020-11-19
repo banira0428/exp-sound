@@ -24,19 +24,19 @@ for i = 1:10
     Dist(1) = sqrt( sum( (PowX_dB(:,1) - Jan_Goo_PowX_dB_Rep ) .^2 ) );
     Dist(2) = sqrt( sum( (PowX_dB(:,1) - Jan_Chk_PowX_dB_Rep ) .^2 ) );
     Dist(3) = sqrt( sum( (PowX_dB(:,1) - Jan_Par_PowX_dB_Rep ) .^2 ) );
-    disp(Dist) % for debug
+    disp(Dist); % for debug
 
     %% 5-2. Select the pattern that has a minimum distance
     [~, idx] = min(Dist);
 
     if idx == 1
-        Jan_Goo_PowX_dB = [Jan_Goo_PowX_dB PowX_dB(:,1)]
+        Jan_Goo_PowX_dB = [Jan_Goo_PowX_dB PowX_dB(:,1)];
     end
     if idx == 2
-        Jan_Goo_PowX_dB = [Jan_Chk_PowX_dB PowX_dB(:,1)]
+        Jan_Goo_PowX_dB = [Jan_Chk_PowX_dB PowX_dB(:,1)];
     end
     if idx == 3
-        Jan_Goo_PowX_dB = [Jan_Par_PowX_dB PowX_dB(:,1)]
+        Jan_Goo_PowX_dB = [Jan_Par_PowX_dB PowX_dB(:,1)];
     end
 
     %% 6. Display the result stiring!
